@@ -8,7 +8,7 @@ def task_one(integer: int) -> str | int:
 
 
 def task_two(x: float, a: float = 1.65) -> float:
-    if x <= 1.4:
+    if x < 1.4:
         return round(pi * pow(x, 2) - 7 / pow(x, 2), 2)
     if x == 1.4:
         return round(a * pow(x, 3) + 7 * sqrt(x), 2)
