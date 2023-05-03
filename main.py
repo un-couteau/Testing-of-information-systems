@@ -5,6 +5,7 @@ from src.lab4 import *
 from src.lab5 import *
 from src.lab6 import *
 
+
 def main():
     lab_input = input("Какую Лабораторную работу хотите запустить?\n")
     match lab_input:
