@@ -22,7 +22,7 @@ def task_one():
 
 
 def task_two(a: float = 1.5, b: float = 15.5, x: float = -2.9) -> float:
-    if input("Хотите изменить начальные значение?\nЕсли нет, то нажмите пробел\n"):
+    if input("Хотите изменить начальные значение?\nЕсли нет, то нажмите Enter\n"):
         a, b, x = list(map(float, input("Введите значения для a, b, x через пробел:\n").split()))
     return cos(pow(x, 3)) - x / sqrt(pow(a, 2) + pow(b, 2))
 
