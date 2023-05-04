@@ -1,10 +1,10 @@
 def task_one() -> list[str]:
     list_of_integers = list()
-    user_choise: str = ''
+    user_choice: str = ''
 
-    while user_choise != "0":
-        user_choise: str = input("Введите число: ")
-        list_of_integers.append(user_choise)
+    while user_choice != "0":
+        user_choice: str = input("Введите число: ")
+        list_of_integers.append(user_choice)
 
     del list_of_integers[-1]
     list_of_integers.reverse()
@@ -13,21 +13,21 @@ def task_one() -> list[str]:
 
 
 def task_two() -> list[int] | int:
-    user_int_input: str = input("Введите минимум 4-значное число: ")
+    user_int_input: str = input("Введите целое число: ")
     result: list[int] = list()
 
-    while len(user_int_input) < 4:
-        user_int_input = input("Ошибка!\nВведите минимум 4-значное число: ")
+    while not user_int_input.isdigit():
+        user_int_input = input("Ошибка!\nВведите целое число: ")
 
     for i in range(int(user_int_input)):
-        if len(str(i)) == 4:
-            if i % 3 == 0:
-                result.append(i)
+        if i > 1000 and i % 3 == 0:
+            result.append(i)
 
     if result:
-        print(result)
+        # print(result) # включите для проверки чисел, которые имеет 4 знака и кратны 3
         return sum(result)
     return 0
+
 
 def lab5():
     print(task_one())

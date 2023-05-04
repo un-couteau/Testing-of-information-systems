@@ -1,4 +1,6 @@
 from math import pi, pow, sqrt, log
+
+
 def task_one(integer: int) -> str | int:
     if integer > 0:
         return '+'

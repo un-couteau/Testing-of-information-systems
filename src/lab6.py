@@ -6,8 +6,8 @@ def task_one(k: int) -> None:
         print(f"Корень числа {i} равен {round(math.sqrt(i), 1)}, а куб равен {math.pow(i, 3)}")
     return
 
-def task_two():
-    ...
+def task_two(a: int, b: int):
+    b - a
 
 
 def lab6():

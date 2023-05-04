@@ -22,7 +22,7 @@ def number_one() -> None:
 
 
 # @red_print_decorator
-def number_two(film: str, cinemstr, time: str) -> str:
+def number_two(film: str, cinema: str, time: str) -> str:
     return f"Билет на {film} в {cinema} на {time} забронирован"
 
 
